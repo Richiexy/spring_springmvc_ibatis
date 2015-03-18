@@ -1,0 +1,427 @@
+.icon-blank{
+	background:url('icons/blank.gif') no-repeat center center;
+}
+.icon-add{
+	background:url('icons/edit_add.png') no-repeat center center;
+}
+.icon-edit{
+	background:url('icons/pencil.png') no-repeat center center;
+}
+.icon-remove{
+	background:url('icons/edit_remove.png') no-repeat center center;
+}
+.icon-lock{
+	background:url('icons/lock.png') no-repeat center center;
+}
+.icon-reset{
+	background:url('icons/reset.png') no-repeat center center;
+}
+.icon-good{
+	background:url('icons/good.png') no-repeat center center;
+}
+.icon-uncheck{
+	background:url('icons/uncheck.png') no-repeat center center;
+}
+.icon-collapse{
+	background:url('icons/collapse.png') no-repeat center center;
+}
+.icon-check{
+	background:url('icons/check.png') no-repeat center center;
+}
+.icon-expand{
+	background:url('icons/expand.png') no-repeat center center;
+}
+.icon-send_email{
+	background:url('icons/send_email.png') no-repeat center center;
+}
+.icon-view_tree{
+	background:url('icons/view_tree.png') no-repeat center center;
+}
+.icon-save{
+	background:url('icons/filesave.png') no-repeat center center;
+}
+.icon-cut{
+	background:url('icons/cut.png') no-repeat center center;
+}
+.icon-ok{
+	background:url('icons/ok.png') no-repeat center center;
+}
+.icon-no{
+	background:url('icons/no.png') no-repeat center center;
+}
+.icon-cancel{
+	background:url('icons/cancel.png') no-repeat center center;
+}
+.icon-reload{
+	background:url('icons/reload.png') no-repeat center center;
+}
+.icon-search{
+	background:url('icons/search.png') no-repeat center center;
+}
+.icon-print{
+	background:url('icons/print.png') no-repeat center center;
+}
+.icon-help{
+	background:url('icons/help.png') no-repeat center center;
+}
+.icon-undo{
+	background:url('icons/undo.png') no-repeat center center;
+}
+.icon-redo{
+	background:url('icons/redo.png') no-repeat center center;
+}
+.icon-back{
+	background:url('icons/back.png') no-repeat center center;
+}
+.icon-sum{
+	background:url('icons/sum.png') no-repeat center center;
+}
+.icon-tip{
+	background:url('icons/tip.png') no-repeat center center;
+}
+
+.icon-mini-add{
+	background:url('icons/mini_add.png') no-repeat center center;
+}
+.icon-mini-edit{
+	background:url('icons/mini_edit.png') no-repeat center center;
+}
+.icon-mini-refresh{
+	background:url('icons/mini_refresh.png') no-repeat center center;
+}
+.icon-0{
+	background:url('icons/0.png')   no-repeat center center;
+} 
+.icon-add_square{
+	background:url('icons/add_square.png')      no-repeat center center;
+} 
+.icon-airmail  {
+	background:url('icons/airmail.png')         no-repeat center center;
+} 
+.icon-binocular{
+	background:url('icons/binocular.png')       no-repeat center center;
+} 
+.icon-black_board            {
+	background:url('icons/black_board.png')     no-repeat center center;
+} 
+.icon-blue_lego{
+	background:url('icons/blue_lego.png')       no-repeat center center;
+} 
+.icon-bonsai   {
+	background:url('icons/bonsai.png')          no-repeat center center;
+} 
+.icon-bookmark {
+	background:url('icons/bookmark.png')        no-repeat center center;
+} 
+.icon-calculator{
+	background:url('icons/calculator.png')      no-repeat center center;
+} 
+.icon-calendar {
+	background:url('icons/calendar.png')        no-repeat center center;
+} 
+.icon-calendar1{
+	background:url('icons/calendar1.png')       no-repeat center center;
+} 
+.icon-caution  {
+	background:url('icons/caution.png')         no-repeat center center;
+} 
+.icon-charged  {
+	background:url('icons/charged.png')         no-repeat center center;
+} 
+.icon-charge_100{
+	background:url('icons/charge_100.png')      no-repeat center center;
+} 
+.icon-charge_20{
+	background:url('icons/charge_20.png')       no-repeat center center;
+} 
+.icon-charge_50{
+	background:url('icons/charge_50.png')       no-repeat center center;
+} 
+.icon-charge_75{
+	background:url('icons/charge_75.png')       no-repeat center center;
+} 
+.icon-charging {
+	background:url('icons/charging.png')        no-repeat center center;
+} 
+.icon-clapperboard           {
+	background:url('icons/clapperboard.png')    no-repeat center center;
+} 
+.icon-clapperboard_open      {
+	background:url('icons/clapperboard_open.png')           no-repeat center center;
+} 
+.icon-clipped_id{
+	background:url('icons/clipped_id.png')      no-repeat center center;
+} 
+.icon-close    {
+	background:url('icons/close.png')           no-repeat center center;
+} 
+.icon-close_square           {
+	background:url('icons/close_square.png')    no-repeat center center;
+} 
+.icon-compact_disc           {
+	background:url('icons/compact_disc.png')    no-repeat center center;
+} 
+.icon-compose  {
+	background:url('icons/compose.png')         no-repeat center center;
+} 
+.icon-computer-keyboard      {
+	background:url('icons/computer-keyboard.png')           no-repeat center center;
+} 
+.icon-contacts-alt           {
+	background:url('icons/contacts-alt.png')    no-repeat center center;
+} 
+.icon-contacts {
+	background:url('icons/contacts.png')        no-repeat center center;
+} 
+.icon-counter  {
+	background:url('icons/counter.png')         no-repeat center center;
+} 
+.icon-denied   {
+	background:url('icons/denied.png')          no-repeat center center;
+} 
+.icon-direction_board        {
+	background:url('icons/direction_board.png') no-repeat center center;
+} 
+.icon-document {
+	background:url('icons/document.png')        no-repeat center center;
+} 
+.icon-done_square            {
+	background:url('icons/done_square.png')     no-repeat center center;
+} 
+.icon-door     {
+	background:url('icons/door.png')            no-repeat center center;
+} 
+.icon-draft    {
+	background:url('icons/draft.png')           no-repeat center center;
+} 
+.icon-envelope {
+	background:url('icons/envelope.png')        no-repeat center center;
+} 
+.icon-floppy   {
+	background:url('icons/floppy.png')          no-repeat center center;
+} 
+.icon-folder   {
+	background:url('icons/folder.png')          no-repeat center center;
+} 
+.icon-green_chalkboard       {
+	background:url('icons/green_chalkboard.png')            no-repeat center center;
+} 
+.icon-hd       {
+	background:url('icons/hd.png')              no-repeat center center;
+} 
+.icon-hd_win   {
+	background:url('icons/hd_win.png')          no-repeat center center;
+} 
+.icon-help_circle            {
+	background:url('icons/help_circle.png')     no-repeat center center;
+} 
+.icon-highlighter            {
+	background:url('icons/highlighter.png')     no-repeat center center;
+} 
+.icon-home     {
+	background:url('icons/home.png')            no-repeat center center;
+} 
+.icon-id       {
+	background:url('icons/id.png')              no-repeat center center;
+} 
+.icon-images   {
+	background:url('icons/images.png')          no-repeat center center;
+} 
+.icon-images_night_scene     {
+	background:url('icons/images_night_scene.png')          no-repeat center center;
+} 
+.icon-inbox    {
+	background:url('icons/inbox.png')           no-repeat center center;
+} 
+.icon-inbox_full{
+	background:url('icons/inbox_full.png')      no-repeat center center;
+} 
+.icon-internal_hd            {
+	background:url('icons/internal_hd.png')     no-repeat center center;
+} 
+.icon-key      {
+	background:url('icons/key.png')             no-repeat center center;
+} 
+.icon-library_occupied       {
+	background:url('icons/library_occupied.png')            no-repeat center center;
+} 
+.icon-lock     {
+	background:url('icons/lock.png')            no-repeat center center;
+} 
+.icon-magic_wand{
+	background:url('icons/magic_wand.png')      no-repeat center center;
+} 
+.icon-mail     {
+	background:url('icons/mail.png')            no-repeat center center;
+} 
+.icon-mail_new {
+	background:url('icons/mail_new.png')        no-repeat center center;
+} 
+.icon-mail_open{
+	background:url('icons/mail_open.png')       no-repeat center center;
+} 
+.icon-manual   {
+	background:url('icons/manual.png')          no-repeat center center;
+} 
+.icon-maximize_square        {
+	background:url('icons/maximize_square.png') no-repeat center center;
+} 
+.icon-minimize_square        {
+	background:url('icons/minimize_square.png') no-repeat center center;
+}
+.icon-man        {
+	background:url('icons/man.png') no-repeat center center;
+} 
+.icon-monitor  {
+	background:url('icons/monitor.png')         no-repeat center center;
+} 
+.icon-monitor_off            {
+	background:url('icons/monitor_off.png')     no-repeat center center;
+} 
+.icon-movies   {
+	background:url('icons/movies.png')          no-repeat center center;
+} 
+.icon-mp3_player_black       {
+	background:url('icons/mp3_player_black.png')            no-repeat center center;
+} 
+.icon-mp3_player_white       {
+	background:url('icons/mp3_player_white.png')            no-repeat center center;
+} 
+.icon-music    {
+	background:url('icons/music.png')           no-repeat center center;
+} 
+.icon-newspaper{
+	background:url('icons/newspaper.png')       no-repeat center center;
+} 
+.icon-note-add {
+	background:url('icons/note-add.png')        no-repeat center center;
+} 
+.icon-note-remove            {
+	background:url('icons/note-remove.png')     no-repeat center center;
+} 
+.icon-note     {
+	background:url('icons/note.png')            no-repeat center center;
+} 
+.icon-notepad  {
+	background:url('icons/notepad.png')         no-repeat center center;
+} 
+.icon-ok       {
+	background:url('icons/ok.png')              no-repeat center center;
+} 
+.icon-pencil   {
+	background:url('icons/pencil.png')          no-repeat center center;
+} 
+.icon-popcorn_bucket         {
+	background:url('icons/popcorn_bucket.png')  no-repeat center center;
+} 
+.icon-popcorn_full           {
+	background:url('icons/popcorn_full.png')    no-repeat center center;
+} 
+.icon-preferences            {
+	background:url('icons/preferences.png')     no-repeat center center;
+} 
+.icon-printer  {
+	background:url('icons/printer.png')         no-repeat center center;
+} 
+.icon-rc       {
+	background:url('icons/rc.png')              no-repeat center center;
+} 
+.icon-recycle_bin_empty      {
+	background:url('icons/recycle_bin_empty.png')           no-repeat center center;
+} 
+.icon-recycle_bin_full       {
+	background:url('icons/recycle_bin_full.png')            no-repeat center center;
+} 
+.icon-removable_drive        {
+	background:url('icons/removable_drive.png') no-repeat center center;
+} 
+.icon-remove_square          {
+	background:url('icons/remove_square.png')   no-repeat center center;
+} 
+.icon-rss      {
+	background:url('icons/rss.png')             no-repeat center center;
+} 
+.icon-ruled_page{
+	background:url('icons/ruled_page.png')      no-repeat center center;
+} 
+.icon-send     {
+	background:url('icons/send.png')            no-repeat center center;
+} 
+.icon-shortkey {
+	background:url('icons/shortkey.png')        no-repeat center center;
+} 
+.icon-soccer_ball            {
+	background:url('icons/soccer_ball.png')     no-repeat center center;
+} 
+.icon-sofa     {
+	background:url('icons/sofa.png')            no-repeat center center;
+} 
+.icon-spam_mail{
+	background:url('icons/spam_mail.png')       no-repeat center center;
+} 
+.icon-speaker  {
+	background:url('icons/speaker.png')         no-repeat center center;
+} 
+.icon-speaker_mute           {
+	background:url('icons/speaker_mute.png')    no-repeat center center;
+} 
+.icon-speaker_volume_control {
+	background:url('icons/speaker_volume_control.png')      no-repeat center center;
+} 
+.icon-tag      {
+	background:url('icons/tag.png')             no-repeat center center;
+} 
+.icon-text_edit{
+	background:url('icons/text_edit.png')       no-repeat center center;
+} 
+.icon-ticket_golden          {
+	background:url('icons/ticket_golden.png')   no-repeat center center;
+} 
+.icon-ticket_golden_punched  {
+	background:url('icons/ticket_golden_punched.png')       no-repeat center center;
+} 
+.icon-ticket_red{
+	background:url('icons/ticket_red.png')      no-repeat center center;
+} 
+.icon-ticket_red_punched     {
+	background:url('icons/ticket_red_punched.png')          no-repeat center center;
+} 
+.icon-trash    {
+	background:url('icons/trash.png')           no-repeat center center;
+} 
+.icon-trash_full{
+	background:url('icons/trash_full.png')      no-repeat center center;
+} 
+.icon-tree     {
+	background:url('icons/tree.png')            no-repeat center center;
+} 
+.icon-usb      {
+	background:url('icons/usb.png')             no-repeat center center;
+} 
+.icon-videos   {
+	background:url('icons/videos.png')          no-repeat center center;
+} 
+.icon-volume_level_1         {
+	background:url('icons/volume_level_1.png')  no-repeat center center;
+} 
+.icon-volume_level_2         {
+	background:url('icons/volume_level_2.png')  no-repeat center center;
+} 
+.icon-volume_lvl_3           {
+	background:url('icons/volume_lvl_3.png')    no-repeat center center;
+} 
+.icon-wand     {
+	background:url('icons/wand.png')            no-repeat center center;
+} 
+.icon-white_lego{
+	background:url('icons/white_lego.png')      no-repeat center center;
+} 
+.icon-wireless_keyboard      {
+	background:url('icons/wireless_keyboard.png')           no-repeat center center;
+} 
+.icon-yellow_lego            {
+	background:url('icons/yellow_lego.png')     no-repeat center center;
+} 
+.icon-zip      {
+	background:url('icons/zip.png')             no-repeat center center;
+} 

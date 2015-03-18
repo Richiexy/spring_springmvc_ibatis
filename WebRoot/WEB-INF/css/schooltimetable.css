@@ -1,0 +1,53 @@
+#layoutDivId{
+	width:100%;
+	height:100%;
+	padding:10px;
+	overflow:auto;
+}
+.left{
+	width:10%;
+	float:left;
+}
+.left table{
+	width:100%;
+	background:#E0ECFF;
+}
+.left td{
+	background:#eee;
+}
+.item{
+	text-align:center;
+	border:1px solid #499B33;
+	background:#fafafa;
+	width:100px;//拖动块的宽度
+}
+.right{
+	float:left;
+	margin: 0 0 0 10px;
+	width:85%
+}
+.right table{
+	background:#E0ECFF;
+	width:100%;
+}
+.right td{
+	background:#fafafa;
+	text-align:center;
+	padding:2px;
+}
+.right td{
+	background:#E0ECFF;
+}
+.right td.time{
+	width:10%;
+}
+.right td.drop{
+	background:#fafafa;
+	width:10%;
+}
+.right td.over{
+	background:#FBEC88;
+}
+.assigned{
+	border:1px solid #BC2A4D;
+}

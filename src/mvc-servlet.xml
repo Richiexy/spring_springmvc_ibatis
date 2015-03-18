@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc 
+					http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+					http://www.springframework.org/schema/beans 
+					http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+					http://www.springframework.org/schema/context 
+					http://www.springframework.org/schema/context/spring-context-3.1.xsd
+					http://www.springframework.org/schema/util
+        			http://www.springframework.org/schema/util/spring-util-3.1.xsd
+					http://www.springframework.org/schema/aop
+                    http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+                    http://www.springframework.org/schema/tx
+                    http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
+
+	<mvc:annotation-driven />
+	
+	<mvc:resources mapping="/css/**" location="/WEB-INF/css/" />
+	<mvc:resources mapping="/js/**" location="/WEB-INF/js/" />
+	<mvc:resources mapping="/jsdef/**" location="/WEB-INF/jsdef/" />
+	<mvc:resources mapping="/images/**" location="/WEB-INF/images/" />
+	
+	<!-- 添加注解支持 -->
+	<context:annotation-config /> 
+	
+	<context:component-scan base-package="com.iis" >
+	<!-- 扫描controller 和 sys文件夹下的类 -->
+		<context:include-filter type="regex" expression="com.iis.(controller|sys).*"/>
+	</context:component-scan>
+	
+ 	<!-- spring aop -->
+ 	<aop:aspectj-autoproxy proxy-target-class="true"/>
+ 
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp/"></property>
+		<property name="suffix" value=".jsp"></property>
+		<property name="order" value="3" />
+	</bean>
+	
+	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="mediaTypes">
+			<map>
+				<entry key="json"  value="application/json" />
+				<entry key="xml" value="text/xml" />
+				<entry key="htm" value="text/html" />
+			</map>
+		</property>
+		<property name="defaultContentType" value="text/html" />
+	</bean>
+	
+	<!-- 启动spring mvc的注解功能，完成请求和注解POJO的映射   ， 配置信息转换，将用@responsebody注解的返回值转换为json返回前台，编码为utf-8 -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">  
+        <property name="messageConverters">  
+            <list>  
+                <bean  
+                    class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">  
+                    <property name="supportedMediaTypes">  
+                        <list>  
+                            <value>application/json;charset=UTF-8</value>  
+                        </list>  
+                    </property>  
+                </bean>  
+            </list>  
+        </property>  
+    </bean>  
+  
+	<!-- 上传文件时需要用到的分解器，默认将编码转为utf-8 -->  
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">    
+        <property name="defaultEncoding">  
+            <value>UTF-8</value>  
+        </property>  
+	<property name="maxUploadSize" value="100000"/>
+    </bean>  
+    
+    <!-- 首页视图，如果该index.jsp在根目录下有，则直接访问该jsp，
+    	如果没有则按照视图解析器解析/WEB-INF/jsp/index.jsp -->
+    <mvc:view-controller path="/" view-name="index"/> 
+</beans>

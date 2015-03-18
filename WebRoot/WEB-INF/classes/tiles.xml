@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd" >
+<tiles-definitions>
+   
+  <definition name="easyui.adminLayout" template="/WEB-INF/jsp/admin/adminTpl.jsp">
+	  <put-attribute name="title" value="easyui演示说明"></put-attribute>
+      <put-attribute name="top" value="/WEB-INF/jsp/admin/layout/top.jsp"></put-attribute>
+      <put-attribute name="left" value="/WEB-INF/jsp/admin/layout/left.jsp"></put-attribute>
+      <put-attribute name="right" value="/WEB-INF/jsp/admin/layout/right.jsp"></put-attribute>
+      <put-attribute name="bottom" value="/WEB-INF/jsp/admin/layout/bottom.jsp"></put-attribute>
+  </definition>
+</tiles-definitions>

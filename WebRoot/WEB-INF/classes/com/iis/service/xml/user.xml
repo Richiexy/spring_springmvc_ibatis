@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"    
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">  
+<sqlMap namespace="com.iis.model.user">  
+  
+    <typeAlias alias="User" type="com.iis.model.User"/>  
+      
+    <select id="findAllUser" resultClass="User" >    
+        select * from t_user  
+    </select>  
+    <select id="findUserByID" resultClass="User" parameterClass="int">    
+        select * from t_user where id=#id#  
+    </select>  
+      
+    <select id="getTotalCount" resultClass="int">  
+        select count(*) from t_user  
+    </select>  
+      
+    <select id="searchUsers" resultClass="User" parameterClass="User">    
+        select * from t_user    
+        <dynamic prepend="where">    
+            <!-- 模糊查询，用$表示文本替换，而用#表示替换PrepareStatement中的?号 -->    
+            <isNotEmpty prepend="and" property="username">    
+                (username like '%$username$%')    
+            </isNotEmpty>    
+            <isNotEmpty prepend="and" property="password">    
+                (password like '%$password$%')    
+            </isNotEmpty>    
+        </dynamic>    
+    </select>  
+      
+    <select id="findUserByNameAndPassword" resultClass="User" parameterClass="User">    
+        select * from t_user where username=#username# and password=#password#  
+    </select>  
+      
+    <insert id="insertUser" parameterClass="User">    
+        insert into t_user(id,username,password) values(null,#username#,#password#)  
+    </insert>  
+      
+    <update id="updateUser" parameterClass="User">    
+        update t_user   
+        set username = #username#,  
+            password=#password#   
+        where id=#id#  
+    </update>  
+  
+    <delete id="deleteUser" parameterClass="int">    
+        delete from t_user where id=#id#  
+    </delete>  
+      
+    <delete id="deleteUserByLike" parameterClass="User">  
+        delete from t_user  
+        <dynamic prepend="where">    
+            <!-- 模糊查询，用$表示文本替换，而用#表示替换PrepareStatement中的?号 -->  
+            <isNotEmpty prepend="and" property="username">    
+                (username like '%$username$%')    
+            </isNotEmpty>    
+            <isNotEmpty prepend="and" property="password">    
+                (password like '%$password$%')    
+            </isNotEmpty>    
+        </dynamic>  
+    </delete>  
+      
+</sqlMap>

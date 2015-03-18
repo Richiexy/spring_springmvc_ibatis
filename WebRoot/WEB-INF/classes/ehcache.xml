@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<ehcache 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true"
+    xsi:SchemaLocation="http://www.springframework.org/schema/util
+		                http://www.springframework.org/schema/util/spring-util.xsd"
+    monitoring="autodetect">  
+   
+   <!-- 
+   <util:properties id="configProperties" location="classpath:config.properties"></util:properties>
+    -->
+    <!--<diskStore path="java.io.tmpdir" /> 临时缓存文件存放位置-->  
+    <diskStore path="user.home"/>  
+    
+    <defaultCache
+       emaxElementsInMemory="10000"
+       eternal="false"
+       StimeToIdleSeconds="120"
+       timeToLiveSeconds="120"
+       DoverflowToDisk="true"
+
+       maxElementsOnDisk="10000000"
+       diskPersistent="false"
+       SdiskExpiryThreadIntervalSeconds="120"
+       memoryStoreEvictionPolicy="LFU"/><!-- LFU LRU FIFO 参看代码MemeoryStoreEvictionPolicy.java -->
+
+    <cache name="bankCache" 
+        maxElementsInMemory="10000"  
+        maxElementsOnDisk="1000"
+        eternal="false" 
+        overflowToDisk="true"  
+        diskSpoolBufferSizeMB="20" 
+        timeToIdleSeconds="300" 
+        timeToLiveSeconds="600"  
+        memoryStoreEvictionPolicy="LFU" />  
+        
+        
+        <cache name="billCache" 
+        maxElementsInMemory="10000"  
+        maxElementsOnDisk="1000"
+        eternal="false" 
+        overflowToDisk="true"  
+        diskSpoolBufferSizeMB="20" 
+        timeToIdleSeconds="300" 
+        timeToLiveSeconds="600"  
+        memoryStoreEvictionPolicy="LFU" />  
+</ehcache>    
